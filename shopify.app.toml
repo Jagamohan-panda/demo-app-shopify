@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "demo-app"
+client_id = "8e052ec6a088a5a7bef4df6eb1fc8bf6"
+application_url = "https://blame-competitive-fuzzy-constitutes.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://blame-competitive-fuzzy-constitutes.trycloudflare.com/auth/callback",
+  "https://blame-competitive-fuzzy-constitutes.trycloudflare.com/auth/shopify/callback",
+  "https://blame-competitive-fuzzy-constitutes.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-b3ea256e.myshopify.com"
